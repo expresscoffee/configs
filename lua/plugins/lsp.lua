@@ -4,7 +4,7 @@ return {
 		"williamboman/mason.nvim",
     	"williamboman/mason-lspconfig.nvim",
 	},
-	config = function() 
+	config = function()
 		local mason = require("mason")
 		local masonLspConfig = require("mason-lspconfig")
 
@@ -16,5 +16,5 @@ return {
             			require("lspconfig")[server_name].setup {}
         		end,
     		}
-	end,	
+	end,
 }
